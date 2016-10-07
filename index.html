@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Bootstrap Alpha</title>
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<style type="text/css">
+   body{
+    background: green;
+   }
+   h1{
+   	font-size: 40px;
+   	text-align: center;
+   }
+   h2{
+   	font-size: 20px; 
+   	color: white;
+   }
+  .recuadro{
+  	border: solid black 2px;
+  }
+  .horizontal{
+	min-height: 250px;
+	margin-top:1em; 
+  }
+  .vertical{
+	min-height: 500px;
+  }
+  #azul{
+  	background: rgb(0,162,232);
+  }
+  #morado{
+  	background: rgb(63,72,204);
+  }
+  #rojo{
+  	background: rgb(237,28,36);
+  }
+  #rojoOscuro{
+  	background: rgb(136,0,21);
+  }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-6">
+			<div class="row">
+				<h1>Columna 1</h1>
+				<div class="col-xs-12 horizontal recuadro" id="azul">
+					<h2>Recuadro 1</h2>
+				</div>
+				<div class="col-xs-12 horizontal recuadro" id="morado">
+					<h2>Recuadro 2</h2>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<h1>Columna 2</h1>
+			<div class="row">
+				<div class="col-xs-5 offset-xs-1 vertical recuadro" id="rojo">
+					<h2>Recuadro 3</h2>
+				</div>
+				<div class="col-xs-5 offset-xs-1 vertical recuadro" id="rojoOscuro">
+					<h2>Recuadro 4</h2>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+
+</body>
+</html>
